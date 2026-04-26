@@ -26,3 +26,20 @@ python icp.py sign "Your message here"
 python icp.py verify statement.json
 Author
 @tiandaoxiuluo
+
+
+## 🧬 Trust Kernel Upgrade
+
+ICP has been upgraded to **Trust Kernel**, adding three core capabilities:
+
+- **Creation Trail** — Every edit is automatically recorded. All versions are chained into an immutable history.
+- **Consensus Seal** — Multiple witnesses can sign and verify the same content. Who witnessed and when is fully traceable.
+- **Time Capsule** — Built-in OpenTimestamps support. Users can anchor content hashes to the Bitcoin blockchain or any compatible public calendar server as needed.
+
+### Usage
+```bash
+# Create a new credential package
+python trust_kernel.py create "Your content here"
+
+# Verify a credential package
+python trust_kernel.py verify package.json
